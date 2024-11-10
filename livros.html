@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippofun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="maicon">
+            <a href="index.html">
+                <img src="logo.png.png" alt="Logo do site">
+            </a>
+            <nav id="jorge">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><button class="carrinho" onclick="window.location.href='carrinho.html'">
+                        <i class="fas fa-shopping-cart"></i> Carrinho
+                        <span class="quantidade" id="quantidadeCarrinho">0</span>
+                    </button></li>
+                </ul>
+            </nav>
+            <div class="pesquisa-container">
+                <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos..." onkeyup="filtrarProdutos()">
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="catalogo">
+<body>
+
+        <section class="catalogo">
+            <div class="produto-card">
+                <img src="https://pm1.narvii.com/6134/3e6addc5bb18b95fccb852ea7138c91ce14d04b9_hq.jpg" alt="No Longer Human">
+                <div class="produto-info">
+                    <h2>No Longer Human</h2>
+                    <p class="descricao">Minha vida tem sido uma vida de muita vergonha. Não consigo nem imaginar o que deve ser viver a vida de um ser humano.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('No Longer Human')">Comprar</button>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <img src="https://th.bing.com/th/id/R.9ffb9255e00b8c91feddbfb6bfd02e2c?rik=PF4%2bdQGu35%2fFQw&pid=ImgRaw&r=0"
+                    alt="Uzumaki">
+                <div class="produto-info">
+                    <h2>Uzumaki</h2>
+                    <p class="descricao">Acontecimentos grotescos começam a surgir em Kurôzu, a pequena localidade onde Kirie Goshima nasceu e cresceu.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Uzumaki')">Comprar</button>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677275204i/56580639.jpg"
+                    alt="Homunculus">
+                <div class="produto-info">
+                    <h2>Homunculus</h2>
+                    <p class="descricao">Do criador de Ichi the Killer e Voyeur, esse conto de terror sobrenatural de sucesso O que Nakoshi verá de diferente quando acordar após passar por um estranho procedimento cirurgico por dinheiro?</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Homunculus')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="https://m.media-amazon.com/images/I/81mPLnHnLWL._AC_UF1000,1000_QL80_.jpg"
+                    alt="Evangelion">
+                <div class="produto-info">
+                    <h2>Evangelion</h2>
+                    <p class="descricao">Uma trama complexa, que aborda temas profundos como a psique humana, seus conflitos internos e relacionamentos.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Evangelion')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="https://m.media-amazon.com/images/I/71lnvXSiITL._AC_UF1000,1000_QL80_.jpg"
+                    alt="Berserk">
+                <div class="produto-info">
+                    <h2>Berserk</h2>
+                    <p class="descricao">O misterioso Guts, o "Espadachim Negro", carrega em sua mão mecânica uma enorme espada, e em seu pescoço uma estranha marca que atrai forças demoníacas. Em sua busca por vingança contra um antigo inimigo, nem tudo sai a seu favor, e ele recebe ajuda de uma fantástica criatura.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Berserk')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="https://m.media-amazon.com/images/I/91+Qs9DaFZL._AC_UF1000,1000_QL80_.jpg"
+                    alt="Viland Saga">
+                <div class="produto-info">
+                    <h2>Viland Saga</h2>
+                    <p class="descricao">Quando criança, Thorfinn, filho do lendário guerreiro viking Thors, vive sem saber o passado do pai, que descobriu após anos no campo de batalha algo mais valioso do que matar seus iguais, viver sua vida de paz. Ao saber os tempos de guerra de seu pai, o garoto se revolta e vai à guerra com ele, mas acaba sendo tarde demais quando reconhece o valor dele.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Viland Saga')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="https://cdn.ome.lt/hNr5Z5uk3g-OOfzy_J9_moxbu3Y=/fit-in/837x500/smart/uploads/conteudo/fotos/sala-de-aula-junji-ito-capa.jpeg"
+                    alt="Sala de aula que derreteu">
+                <div class="produto-info">
+                    <h2>Sala de aula que derreteu</h2>
+                    <p class="descricao">E se pedir desculpas fosse o suficiente para escapar dos seus problemas? Yuma Azawa é um estudante de aparência inofensiva que pede perdão compulsivamente a todos ao seu redor. Ajoelhado, entre uma súplica e outra, que despertam as mais diversas reações em quem as escuta — de respostas violentas a sentimentos de conforto —, lentamente, algo começa a fazer com que as pessoas em volta de Yuma derretam, até virarem uma massa viscosa e nojenta no chão.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Sala de aula que derreteu')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="https://m.media-amazon.com/images/I/81MKsr1ukbL._AC_UF1000,1000_QL80_.jpg"
+                    alt="Sala de aula que derreteu">
+                <div class="produto-info">
+                    <h2>Deserter</h2>
+                    <p class="descricao">Uma malícia cada vez maior. Um terror que entorpece a mente. As sementes do horror são plantadas nessa coleção dos primeiros trabalhos de Junji Ito.
+                    Uma família vingativa esconde um desertor do exército por oito anos após o fim da Segunda Guerra Mundial, envolvendo-o em uma falsa realidade em que a guerra nunca terminou. Duas meninas são parecidas, mas não são gêmeas. E o pesadelo de um garoto ameaça se espalhar pelo mundo real...</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Deserter')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="https://m.media-amazon.com/images/I/81Kd+KaDBKL._AC_UF1000,1000_QL80_.jpg"
+                    alt="Soichi">
+                <div class="produto-info">
+                    <h2>Soichi</h2>
+                    <p class="descricao">ouichi Tsujii, um garoto antissocial, é apaixonado por tudo que há de perverso e oculto e se diverte com o seu suposto poder de lançar perigosas maldições em qualquer oportunidade, principalmente ao ser contrariado! E quando seus primos Michina e Yusuke começam a frequentar sua casa nas férias, ele ganha novos alvos para atormentar.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Soichi')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+            <img src="https://m.media-amazon.com/images/I/61hpnT6J7vL._AC_UF1000,1000_QL80_.jpg"
+                    alt="Tomie">
+                <div class="produto-info">
+                    <h2>Tomie</h2>
+                    <p class="descricao">Podem matá-la quantas vezes quiserem, que ela ainda assim ressurgirá neste mundo, mais bela do que nunca. Ninguém sabe ao certo quem ou o que ela é, mas uma coisa é certa: se você se deparar com Tomie Kawakami, seu destino estará selado.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Tomie')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+            <img src="https://m.media-amazon.com/images/I/518ofvhlnrL.jpg"
+                    alt="Tokyo Ghoul">
+                <div class="produto-info">
+                    <h2>Tokyo Ghoul</h2>
+                    <p class="descricao">Em Tokyo, criaturas conhecidas como "Ghouls" vivem entre os humanos e os devoram para sobreviver. Alheio a eles, o jovem universitário Ken Kaneki leva uma vida pacata entre livros, até que um trágico encontro o coloca diante desses seres e o obriga a lutar por sua humanidade.</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Tokyo Ghoul')">Comprar</button>
+                </div>
+            </div>
+            <div class="produto-card">
+            <img src="https://m.media-amazon.com/images/I/81s8xJUzWGL._AC_UF1000,1000_QL80_.jpg"
+                    alt="Chainsaw Man">
+                <div class="produto-info">
+                    <h2>Chainsaw Man</h2>
+                    <p class="descricao">Denji é um jovem extremamente pobre que junto de Pochita, seu demônio de estimação, trabalha feito um condenado como Caçador de Demônios para pagar a imensa dívida que possui. Mas sua vida de miséria está prestes a mudar graças a uma traição brutal!! Aqui começa a história de um novo anti-herói que com um demônio em seu corpo, caça demônios!!</p>
+                    <p class="preco">Preço: R$ XX,XX</p>
+                    <button id="comprar" onclick="adicionarAoCarrinho('Chainsaw Man')">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+        </section>
+    </div>
+</html>

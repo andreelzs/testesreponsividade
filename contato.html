@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippofun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="maicon">
+            <a href="index.html">
+             <img src="logo.png.png" alt="Logo do site">
+            <nav id="jorge">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><button class="carrinho" onclick="window.location.href='carrinho.html'">
+                        <i class="fas fa-shopping-cart"></i> Carrinho
+                        <span class="quantidade" id="quantidadeCarrinho">0</span>
+                      </button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Sofisticado</title>
+    <link rel="stylesheet" href="formulario.css">
+
+
+
+
+    <div class="container">
+
+        <form class="contact-form">
+            <h2>Formulário de Contato</h2>
+           <input type="text" name="nome" id="Name" placeholder="Nome" required>
+           <input type="email" name="mail" id="mail" placeholder="Email" required>
+           <input type="text" name="assunto" id="assunto" placeholder="Assunto"  required>
+           <textarea name="msg" id="msg" placeholder="Mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="form-message" style="color: red; display: none;"></p>
+    </div>
+    <footer>
+            <p>&copy; Direitos Reservados a Nippofun Int..</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+

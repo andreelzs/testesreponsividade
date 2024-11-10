@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippofun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="maicon">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png.png" alt="Logo do site">
+                </a>
+            </div>
+
+            <nav id="jorge">
+                <ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <button class="carrinho" onclick="window.location.href='carrinho.html'">
+                            <i class="fas fa-shopping-cart"></i> Carrinho
+                            <span class="quantidade" id="quantidadeCarrinho">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Seja bem vindo a Nippofun</h2>
+            <p>A sua loja de mangás</p>
+            <p>Sua jornada no mundo dos mangás começa aqui! Explore coleções exclusivas, lançamentos e raridades selecionadas para os verdadeiros fãs da cultura japonesa.</p>
+            <br><br>
+            <a href="livros.html" class="botao-link">Clique para conferir nossos produtos</a>
+        </div>
+    </section>
+
+
+    <div class="promo-alert" id="promoAlert">
+        <span class="promo-message">🎉 Super Promoção! 10% Na sua primeira compra usando o cupom: PRIMEIRACOMPRA 🎉</span>
+        <button class="close-btn" onclick="fecharAlerta()">X</button>
+    </div>
+
+    
+    <footer>
+        <p>&copy; Direitos Reservados a Nippofun Int.</p>
+    </footer>
+</body>
+</html>
